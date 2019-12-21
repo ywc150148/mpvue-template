@@ -19,12 +19,7 @@ export default {
   mixins: [Common],
   data () {
     return {
-      testdata: 666,
-      motto: 'Hello miniprograme',
-      userInfo: {
-        nickName: 'mpvue',
-        avatarUrl: 'http://mpvue.com/assets/logo.png'
-      }
+
     }
   },
   onShow () {
@@ -50,7 +45,8 @@ export default {
   },
 
   created () {
-    // let app = getApp()
+    let app = getApp()
+    console.log('app', app)
   }
 }
 </script>
