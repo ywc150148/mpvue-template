@@ -1,8 +1,7 @@
 <template>
 <div @click="handleback">
-  这是a---
-  
-    <p @click="handleNav">nav</p>
+  <h1>这是分包页面</h1>
+  <p @click="handleNav">回到tab1</p>
 </div>
 </template>
 

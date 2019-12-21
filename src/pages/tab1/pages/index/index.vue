@@ -1,12 +1,15 @@
 <template>
   <div @click="clickHandle">
     <CommonTest text="公共组件" />
-
-    <a href="/pages/subContract1/pages/a/main">前往A</a>
     <Tab1Test text="模块组件" />
-    {{moudleName}} 
+    <div>{{tips}}</div>
+    <div>
+      <van-button type="primary" @click="handleNav">跳转到tab2</van-button>
+    </div>
 
-    <p @click="handleNav">nav</p>
+    <div>
+      <van-button type="primary" @click="$nav('subContract1.a')">前往A</van-button>
+    </div>
   </div>
 </template>
 
@@ -18,13 +21,9 @@ import { Common } from '@/utils/Mix'
 export default {
   mixins: [Common],
   data () {
-    return {
-
-    }
+    return {}
   },
-  onShow () {
-    console.log('显示首页', this.testdata)
-  },
+  onShow () {},
 
   components: {
     CommonTest,
@@ -33,16 +32,16 @@ export default {
 
   methods: {
     handleNav () {
-      this.$nav('subContract1.a', {
+      this.$nav('tab2.index', {
         query: {
           id: 12342111,
           djad: 1331
-        }
+        },
+        navType: 'switchTab'
       })
     }
   },
-  computed: {
-  },
+  computed: {},
 
   created () {
     let app = getApp()

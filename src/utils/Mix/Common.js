@@ -10,7 +10,7 @@ export default {
 
   },
   computed: {
-    ...mapState('common', ['login_status', 'moudleName'])
+    ...mapState('common', ['login_status', 'tips'])
   },
   methods: {
     ...mapMutations('Common', ['SaveUserInfo', 'SetLoginStatus'])

@@ -2,7 +2,8 @@
   <div>
     <CommonTest text="公共组件" />
     <Tab1Test text="模块组件" />
-    {{moudleName}}
+    {{tips}} 
+    <van-button type="primary" @click="$nav('tab1.index',{navType:'switchTab'})">回到首页</van-button>
   </div>
 </template>
 
@@ -30,6 +31,7 @@ export default {
   mounted () {
   },
   methods: {
+
   },
   computed: {
   },

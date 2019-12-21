@@ -5,5 +5,5 @@ export default {
   user_info: {
     name: 'ywc'
   },
-  moudleName: '这里是全局'
+  tips: '这里是全局vuex'
 }

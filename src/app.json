@@ -1,6 +1,7 @@
 {
   "pages": [
     "pages/tab1/pages/index/main",
+    "pages/tab2/pages/index/main",
     "pages/logs/main",
     "pages/counter/main"
   ],
@@ -30,10 +31,10 @@
       "iconPath": "static/tabs/1.png",
       "selectedIconPath": "static/tabs/11.png"
     }, {
-      "text": "订单",
-      "pagePath": "pages/logs/main",
-      "iconPath": "static/tabs/orders.png",
-      "selectedIconPath": "static/tabs/orders-active.png"
+      "text": "功能",
+      "pagePath": "pages/tab2/pages/index/main",
+      "iconPath": "static/tabs/2.png",
+      "selectedIconPath": "static/tabs/22.png"
     }],
     "position": "bottom"
   }
