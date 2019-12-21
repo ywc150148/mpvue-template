@@ -6,7 +6,7 @@
 
 ``` bash
 # 初始化项目
-vue init mpvue/mpvue-quickstart myproject
+vue init mpvue/mpvue-template myproject
 cd myproject
 
 # 安装依赖
