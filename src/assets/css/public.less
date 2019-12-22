@@ -1,7 +1,142 @@
+// flex-direction: row | row-reverse | column | column-reverse;
+// flex-wrap     : nowrap | wrap | wrap-reverse;
+// flex-flow
+// justify-content: flex-start | flex-end | center | space-between | space-around;
+// align-items: flex-start | flex-end | center | baseline | stretch; 单行内容
+// align-content:: flex-start | flex-end | center | space-between | space-around | stretch; 多行内容，可以说是全部内容的对其，多轴线生效
+
 .flex {
   display: flex;
 }
 
-.flex {
+.flex-d-rr {
   display: flex;
+  flex-direction: row-reverse;
+}
+
+.flex-d-c {
+  display: flex;
+  flex-direction: column;
+}
+
+.flex-d-cr {
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+.flex-w {
+  flex-wrap: wrap;
+}
+
+.flex-w-n {
+  flex-wrap: nowrap;
+}
+
+.flex-w-wr {
+  flex-wrap: wrap-reverse;
+}
+
+.flex-j-s {
+  .flex;
+  justify-content:flex-start;
+}
+
+.flex-j-e {
+  .flex;
+  justify-content:flex-end;
+}
+
+.flex-j-c {
+  .flex;
+  justify-content:center;
+}
+
+.flex-j-sb {
+  .flex;
+  justify-content:space-between;
+}
+
+.flex-j-sa {
+  .flex;
+  justify-content:space-around;
+}
+
+.flex-ss {
+  .flex;
+  .flex-s;
+  align-items: flex-start;
+}
+
+.flex-a-s {
+  .flex;
+  align-items: flex-start;
+}
+
+.flex-a-e {
+  .flex;
+  align-items: flex-end;
+}
+
+.flex-a-c {
+  .flex;
+  align-items: center;
+}
+
+.flex-a-b {
+  .flex;
+  align-items: baseline;
+}
+
+.flex-a-s {
+  .flex;
+  align-items: stretch;
+}
+
+.flex-c {
+  .flex-j-c;
+}
+
+.flex-cc {
+  .flex-j-c;
+  .flex-a-c;
+}
+
+.flex-ccc {
+  .flex-j-c;
+  .flex-d-c;
+  .flex-a-c;
+}
+
+.flex-cccc {
+  .flex-j-c;
+  .flex-d-c;
+  align-content:center;
+}
+
+.flex-sb {
+  .flex-j-sb;
+}
+
+.flex-sa {
+  .flex-j-sa 
+}
+
+.flex-bc {
+  .flex-j-sb;
+  .flex-a-c;
+}
+
+.flex-bcc {
+  .flex-j-sb;
+  align-content:center;
+}
+
+.flex-sabc {
+  .flex-j-sa;
+  .flex-a-c;
+}
+
+.flex-sabcc {
+  .flex-j-sa;
+  align-content:center;
 }
